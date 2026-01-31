@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Formula Fortress</title>
+</head>
+<body>
+  <h1>🧪 Formula Fortress</h1>
+  <p>Defend the fortress by choosing the correct chemical formula!</p>
+
+  <h2>Water formula?</h2>
+  <button onclick="check('H2O')">H₂O</button>
+  <button onclick="check('CO2')">CO₂</button>
+  <button onclick="check('NaCl')">NaCl</button>
+
+  <p id="result"></p>
+
+  <script>
+    function check(answer) {
+      document.getElementById("result").innerText =
+        answer === "H2O" ? "✅ Correct! Fortress safe." : "❌ Wrong! Try again.";
+    }
+  </script>
+</body>
+</html>
