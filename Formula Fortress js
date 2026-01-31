@@ -1,0 +1,10 @@
+const correct = "H2O";
+
+function check(answer) {
+  const result = document.getElementById("result");
+  if (answer === correct) {
+    result.textContent = "✅ Correct! Fortress protected.";
+  } else {
+    result.textContent = "❌ Wrong! Fortress under attack.";
+  }
+}
